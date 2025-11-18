@@ -1,10 +1,14 @@
-:root{
-    --green: #2F9E44;
-    --golden: #FFD43B;
-    --soft-green: #B2F2BB;
-    --softer-green: #69DB7C;
+/*cuando pongas colores con el root usa var() para eso
+EJ: background-color: var(--your-shit-here);
+*/
+
+:root {
+  --green: #2f9e44;
+  --golden: #ffd43b;
+  --soft-green: #b2f2bb;
+  --softer-green: #69db7c;
 }
 
-body{
-    background-color: var(--soft-green);
+body {
+  background-color: var(--soft-green);
 }

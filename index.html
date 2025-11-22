@@ -1,48 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Investigación De Latinoamérica</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-a
 
 <body>
-    <header class="title">
-        <h1>Información de Latinoamérica.</h1>
+    <header class="site-header">
+        <h1 class="site-title">Investigación De Latinoamérica</h1>
     </header>
-    <nav class="problems">
-        <a href="">Problemas medio ambientales</a>
-        <a href="">Desigualdad</a>
-        <a href="">Problemas de educación</a>
+
+    <nav class="problems" role="navigation" aria-label="Secciones">
+        <a class="nav-item" href="#">Problemas medio ambientales</a>
+        <a class="nav-item" href="#">Desigualdad</a>
+        <a class="nav-item" href="#">Problemas de educación</a>
     </nav>
-    <main>
-        <section class="image">
-            <img src="https://placehold.co/240x190" alt="">
-        </section>
-        <article class="info">
-            <section class="informatio">
-                <h3>Info</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam consequatur rerum, pariatur culpa
-                    cumque nemo temporibus officiis assumenda fugiat? Asperiores itaque voluptatem corrupti voluptas
-                    quia?</p>
+
+    <main class="container">
+        
+        <aside class="img-box card">
+            <img src="https://placehold.co/240x190" alt="Ilustración medioambiental" width="240" height="190" />
+        </aside>
+        <article class="content">
+            <section class="info card">
+                <h3 class="info-title">Info</h3>
+                <p class="lead">
+                    El medio ambiente en Latinoamérica enfrenta <strong>grandes desafíos</strong> en los últimos años.
+                    Aunque se han realizado esfuerzos para frenar el deterioro ambiental, todavía persiste una
+                    <strong>notable flexibilidad en las leyes ecológicas</strong> de países como Chile, Perú o
+                    Argentina.
+                </p>
+
+                <p class="lead">
+                    Problemas como la <strong>deforestación</strong>, la <strong>minería ilegal</strong>,
+                    los <strong>drásticos cambios climáticos</strong> e incluso la
+                    <strong>violencia contra las personas que intentan proteger el entorno</strong> —como ocurre en
+                    Bolivia,
+                    Colombia y Ecuador— continúan afectando gravemente la región. No obstante, muchos Estados aún no
+                    prestan la atención necesaria para abordar de manera efectiva <strong>estos problemas
+                        ambientales</strong>.
+                </p>
             </section>
-            <section class="example">
-                <h3>Ejemplo</h3>
-                <ul>
+
+            <section class="example card">
+                <h3 class="example-title">Ejemplo</h3>
+                <li class="example-list">
                     <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                    <li>Ejemplo 2: caso de minería ilegal</li>
+                    <li>Ejemplo 3: deforestación en Amazonía</li>
+                    <li>Ejemplo 4: campañas de protección</li>
+                </li>
             </section>
         </article>
     </main>
-    <footer>
+
+    <footer class="site-footer">
         <p>Escrito por: <strong>name here lol</strong></p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 

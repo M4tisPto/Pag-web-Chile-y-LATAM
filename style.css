@@ -1,42 +1,42 @@
-:root{
+:root {
   --green: #2f9e44;
   --golden: #ffd43b;
   --soft-green: #b2f2bb;
   --softer-green: #69db7c;
   --alien: #2ba6ff;
-  --greener:#00e958 ;
-  --alien-transition:#0f76ff;
+  --greener: #00e958;
+  --alien-transition: #0f76ff;
   --card-border: 5px;
   --card-radius: 20px;
   --max-width: 1100px;
 }
 
 /* Layout base */
-body{
+body {
   background: var(--soft-green);
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: #0b2a1a;
   line-height: 1.5;
   padding: 20px;
 }
 
-/* HEADER (h1 amarillo en tu sketch) */
-.site-header{
+/* HEADER */
+.site-header {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 18px 0;
   border-bottom: 3px solid #000;
 }
-.site-title{
-  font-family: 'Permanent Marker', 'Comic Sans MS', Arial, sans-serif;
+.site-title {
+  font-family: "Permanent Marker", "Comic Sans MS", Arial, sans-serif;
   font-size: 3rem;
   color: var(--golden);
   text-align: center;
 }
 
 /* NAV */
-.problems{
+.problems {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -45,18 +45,19 @@ body{
   margin-top: 10px;
   border-bottom: 3px solid #000;
 }
-.nav-item{
+.nav-item {
   text-decoration: none;
   color: var(--alien);
   font-size: 1.1rem;
   padding: 6px 12px;
 }
-.nav-item:hover{
+.nav-item:hover {
   color: var(--alien-transition);
   transform: scale(1.05);
 }
 
-.container{
+/* CONTENEDOR PRINCIPAL */
+.container {
   max-width: var(--max-width);
   margin: 30px auto;
   display: flex;
@@ -66,9 +67,9 @@ body{
   justify-content: center;
 }
 
-/* IMG BOX (lado izquierdo) */
-.img-box{
-  flex: 0 0 300px; /* espacio fijo para que se replicable */
+/* IMG BOX */
+.img-box {
+  flex: 0 0 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +79,7 @@ body{
   background: white;
   height: auto;
 }
-.img-box img{
+.img-box img {
   display: block;
   width: 240px;
   height: 190px;
@@ -86,47 +87,47 @@ body{
   border-radius: 12px;
 }
 
-/* CONTENIDO DERECHO (info + ejemplo) */
-.content{
+/* CONTENIDO */
+.content {
   flex: 1 1 600px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* TARJETAS (.card): borde 5px, borde redondeado */
-.card{
+/* TARJETAS */
+.card {
   border: var(--card-border) solid #000;
   border-radius: var(--card-radius);
   padding: 18px;
   background: white;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
 }
 
-/* TÍTULOS DE SECCIÓN H3 */
-.info-title, .example-title{
-  color: var(--green); /* h3 color green */
+/* TITULOS H3 */
+.info-title,
+.example-title {
+  color: var(--green);
   margin-bottom: 10px;
   font-size: 1.3rem;
 }
 
-/* Párrafos más legibles */
-.lead{
+/* TEXTOS */
+.lead {
   font-size: 0.98rem;
   margin-bottom: 12px;
   text-align: justify;
 }
 
-/* Lista ejemplo con color verde en texto (anotación) */
-.example-list li{
+/* LISTA EJEMPLOS */
+.example-list li {
   margin: 6px 0;
   color: var(--greener);
 }
 
-/* Footer */
-.site-footer{
+/* FOOTER */
+.site-footer {
   text-align: center;
   margin-top: 30px;
   font-size: 0.95rem;
 }
-
